@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Excel Reader</title>
+  </head>
+  <body>
+    <input type="file" id="file-input" />
+    <button id="read-button">Read Excel File</button>
+    <button id="user-dialog-btn" onclick="showAllUserDialog()">
+      Show All User Diyalog
+    </button>
+    <button id="user-total-dialog-btn" onclick="showAllUserTotalDialog()">
+      Show User Total Diyalog
+    </button>
+
+    <div>
+      <div id="table-container"></div>
+    </div>
+
+    <div>
+      <div id="user-totals"></div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+    <script>
+      function showAllUserDialog() {
+        var x = document.getElementById("table-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function showAllUserTotalDialog() {
+        var x = document.getElementById("user-totals");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

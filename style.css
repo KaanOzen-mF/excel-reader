@@ -1,0 +1,8 @@
+.username {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dialog-number {
+  display: none;
+}
